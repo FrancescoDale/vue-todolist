@@ -5,10 +5,13 @@
 }
 
 .container {
-
+    margin: 50px 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
     text-transform: capitalize;
     font-size: 25px;
+    text-align: center;
 }

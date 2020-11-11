@@ -18,6 +18,14 @@
                 <div class="input_box">
                     <input type="text">
                     <button id="addtodo">Add</button>
+
+                    <ul>
+                        <li v-for='item in todos'>
+                            {{item}}
+                            <i class="fas fa-star"></i>
+
+                        </li>
+                    </ul>
                 </div>
 
             </div>

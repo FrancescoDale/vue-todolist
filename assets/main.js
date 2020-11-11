@@ -6,13 +6,14 @@ var app = new Vue ( {
             'farina',
             'latte',
             'biscotti',
+            'prosciutto',
         ]
 
     },
 
     methods : {
 
-        
+
     },
 
 

@@ -12,6 +12,7 @@ var app = new Vue ( {
         // variabile che prende il nuovo eleneto della lista dato dall'utente
         newTodo : '', // valore vuoto
         i : '', //assume il valore corrente di todos[i]
+        k : '', 
     },
 
     methods : {
@@ -25,8 +26,8 @@ var app = new Vue ( {
         },
 
         // creo una funzione che prende come parametro il tasto premuto
-        enterKey () {
-            if (true) {
+        enterKey (k) {
+            if (k.keyCode === 13) {
                 // al verificarsi della condizione inserisce newTodo nell'array todos
                 this.todos.push(this.newTodo);
 

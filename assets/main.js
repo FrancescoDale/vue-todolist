@@ -30,7 +30,9 @@ var app = new Vue ( {
         enterKey () {
             // al verificarsi della condizione inserisce newTodo nell'array todos
             this.addtodo();
+            this.newTodo = "";
         },
+
     },
 
 

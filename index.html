@@ -16,13 +16,13 @@
         <div id="root">
             <div class="container">
                 <div class="input_box">
-                    <input type="text">
+                    <input type="text" v-model='newTodo'>
                     <button @click='addtodo'>Add</button>
 
                     <ul>
                         <li v-for='item in todos'>
                             {{item}}
-                            <i class="fas fa-star"></i>
+                            <i @click='canceltodo' class="fas fa-star"></i>
 
                         </li>
                     </ul>

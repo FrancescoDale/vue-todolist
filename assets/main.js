@@ -18,7 +18,7 @@ var app = new Vue ( {
         addtodo () {
             // console.log('click!');
             // il testo digitato viene assegnato ad una variabile che viene pushata nell'array todos
-
+            this.todos.push(this.newTodo);
         },
 
     },

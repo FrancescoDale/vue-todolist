@@ -11,8 +11,8 @@ var app = new Vue ( {
 
         // variabile che prende il nuovo eleneto della lista dato dall'utente
         newTodo : '', // valore vuoto
-        i : '', //assume il valore corrente di todos[i]
-        k : '', 
+        // i : '', //assume il valore corrente di todos[i]
+        // k : '',
     },
 
     methods : {
@@ -21,18 +21,15 @@ var app = new Vue ( {
             // il testo digitato viene assegnato ad una variabile che viene pushata nell'array todos
             this.todos.push(this.newTodo);
         },
-        canceltodo (i) {
-            this.$delete(this.todos,i);
+        canceltodo (index) {
+            // this.$delete(this.todos,index);
+            this.todos.splice(index,1);
         },
 
-        // creo una funzione che prende come parametro il tasto premuto
-        enterKey (k) {
-            if (k.keyCode === 13) {
-                // al verificarsi della condizione inserisce newTodo nell'array todos
-                this.todos.push(this.newTodo);
-
-            }
-
+        //creo una funzione che prende come parametro il tasto premuto
+        enterKey () {
+            // al verificarsi della condizione inserisce newTodo nell'array todos
+            this.todos.push(this.newTodo);
         },
     },
 

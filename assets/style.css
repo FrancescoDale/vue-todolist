@@ -17,6 +17,10 @@ h1 {
     text-align: center;
 }
 
+ul {
+    list-style-type: upper-roman;
+}
+
 ul li {
     margin-top: 10px;
 }

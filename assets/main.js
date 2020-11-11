@@ -7,13 +7,18 @@ var app = new Vue ( {
             'latte',
             'biscotti',
             'prosciutto',
-        ]
+        ],
+
+        // variabile che prende il nuovo eleneto della lista dato dall'utente
+        newTodo : '', // valore vuoto
 
     },
 
     methods : {
-        prova () {
-            console.log('click!');
+        addtodo () {
+            // console.log('click!');
+            // il testo digitato viene assegnato ad una variabile che viene pushata nell'array todos
+
         },
 
     },

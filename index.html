@@ -20,9 +20,9 @@
                     <button @click='addtodo'>Add</button>
 
                     <ul>
-                        <li v-for='item in todos'>
+                        <li v-for='item, i in todos' >
                             {{item}}
-                            <i @click='canceltodo' class="fas fa-star"></i>
+                            <i @click='canceltodo(i)' class="fas fa-star"></i>
 
                         </li>
                     </ul>

@@ -11,7 +11,7 @@ var app = new Vue ( {
 
         // variabile che prende il nuovo eleneto della lista dato dall'utente
         newTodo : '', // valore vuoto
-
+        i : '', //assume il valore corrente di todos[i]
     },
 
     methods : {
@@ -20,7 +20,9 @@ var app = new Vue ( {
             // il testo digitato viene assegnato ad una variabile che viene pushata nell'array todos
             this.todos.push(this.newTodo);
         },
-
+        canceltodo (i) {
+            this.$delete(this.todos,i);
+        },
     },
 
 

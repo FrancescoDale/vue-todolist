@@ -12,7 +12,9 @@ var app = new Vue ( {
     },
 
     methods : {
-
+        prova () {
+            console.log('click!');
+        },
 
     },
 

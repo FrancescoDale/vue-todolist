@@ -23,6 +23,11 @@ var app = new Vue ( {
         canceltodo (i) {
             this.$delete(this.todos,i);
         },
+
+        // creo una funzione che prende come parametro il tasto premuto
+        enterKey () {
+
+        },
     },
 
 

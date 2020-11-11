@@ -26,10 +26,12 @@ var app = new Vue ( {
 
         // creo una funzione che prende come parametro il tasto premuto
         enterKey () {
-            
+            if (true) {
+                // al verificarsi della condizione inserisce newTodo nell'array todos
+                this.todos.push(this.newTodo);
 
-            // al verificarsi della condizione inserisce newTodo nell'array todos
-            this.todos.push(this.newTodo);
+            }
+
         },
     },
 
